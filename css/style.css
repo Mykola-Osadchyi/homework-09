@@ -1,0 +1,391 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --first-font: 'Montserrat', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --first-color: rgb(255, 255, 255);
+  --second-color: rgb(51, 51, 51);
+  --third-color: rgb(102, 102, 102);
+  --fourth-color: rgb(255, 78, 80);
+  --fifth-color: rgb(26, 25, 21);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--first-color);
+}
+
+/* ! Mobile */
+@media (max-width: 374px) {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-partners-list-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .main-header-description {
+    max-width: 224px;
+  }
+
+  .main-header-site-logotype {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .main-header-registration-button-column {
+    margin-bottom: 112px;
+  }
+}
+
+/* ! Header - Mobile */
+.main-header {
+  padding: 18px 0px 138px 0px;
+  background-color: var(--fifth-color);
+  background-image: url(../img/header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header-site-logotype {
+  font-size: 20px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.main-header-registration-button {
+  font-size: 14px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: rgba(26, 25, 21, 0);
+}
+
+.log-in {
+  width: 64px;
+  height: 40px;
+}
+
+.sign-up {
+  width: 94px;
+  height: 40px;
+}
+
+.main-header-registration-button:hover,
+.main-header-registration-button:focus {
+  border-color: var(--first-color);
+  transition: border-color 200ms linear;
+}
+
+.main-header-registration-button-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header-content-wraper {
+  text-align: center;
+}
+
+.main-header-top-row {
+  margin-bottom: 34px;
+}
+
+.main-header-title {
+  font-size: 30px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0px 0px 10px 0px;
+}
+
+.main-header-title-new-line {
+  display: block;
+}
+
+.main-header-description {
+  font-size: 18px;
+  font-family: var(--second-font);
+  color: var(--first-color);
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 0px auto 14px;
+}
+
+.main-header-button {
+  font-size: 14px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  line-height: 1.2;
+  border-style: none;
+  border-radius: 20px;
+  background-color: var(--fourth-color);
+  width: 280px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ! Section partners - Mobile */
+.section-partners {
+  padding: 64px 0px 56px 0px;
+}
+
+.section-partners-title-top-column {
+  margin-bottom: 18px;
+}
+
+.section-partners-title-middle-column {
+  margin-bottom: 28px;
+}
+
+.section-partners-title {
+  font-size: 22px;
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-partners-list-item-image-wraper {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  width: 122px;
+}
+
+.section-partners-list-item-image-wraper::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: 4px solid #ffffff;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: content-box;
+}
+
+.first-partner::after {
+  background-color: #ff4e50;
+  background-image: url(../img/partners/icons/tv-set.png);
+}
+.second-partner::after {
+  background-color: #ffa507;
+  background-image: url(../img/partners/icons/vial.png);
+}
+.third-partner::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/partners/icons/coffee.png);
+}
+.fourth-partner::after {
+  background-color: #4e73db;
+  background-image: url(../img/partners/icons/plane.png);
+}
+
+.section-partners-list-item-image {
+  border-radius: 50%;
+}
+
+.section-partners-list-item-name {
+  font-size: 14px;
+  color: var(--second-color);
+  font-family: var(--first-font);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.section-partners-list-item-about {
+  font-size: 14px;
+  color: var(--third-color);
+  font-family: var(--second-font);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-partners-button {
+  font-size: 14px;
+  color: var(--fourth-color);
+  font-family: var(--first-font);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--first-color);
+  border: 2px solid var(--fourth-color);
+  margin: 0 auto;
+  display: block;
+}
+
+/* ! Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-partners-list-item:first-child {
+    margin-bottom: 58px;
+  }
+
+  .main-header-top-row {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* ! Header - Tablet */
+  .main-header {
+    padding: 38px 0px 234px 0px;
+    background-image: url(../img/header-tablet.png);
+  }
+
+  .main-header-top-row {
+    margin-bottom: 138px;
+  }
+
+  .main-header-registration-button-wraper {
+    justify-content: flex-end;
+  }
+
+  .main-header-title {
+    font-size: 52px;
+    margin-bottom: 26px;
+  }
+
+  .main-header-description {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .main-header-button {
+    width: 226px;
+  }
+
+  /* ! Serction partners - Tablet */
+  .section-partners {
+    padding: 66px 90px 56px 90px;
+  }
+
+  .section-partners-title-top-column {
+    margin-bottom: 34px;
+  }
+
+  .section-partners-title-middle-column {
+    margin-bottom: 38px;
+  }
+
+  .first-position {
+    order: -2;
+  }
+  .second-position {
+    order: -1;
+  }
+
+  .section-partners-button {
+    width: 198px;
+    height: 44px;
+  }
+}
+
+/* ! Desktop */
+@media (min-width: 992px) {
+  .main-header {
+    padding-top: 36px;
+    background-image: url(../img/header-desktop.png);
+  }
+
+  .section-partners {
+    padding: 66px 0px 56px 0px;
+  }
+}
