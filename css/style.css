@@ -82,10 +82,9 @@ body {
 }
 
 /* ! Mobile */
-@media (max-width: 374px) {
-  .main-header-title-new-line-mobile {
-    padding-right: 0px;
-    padding-left: 0px;
+@media (max-width: 322px) {
+  .main-header-title-new-line {
+    letter-spacing: -0.5px;
   }
 }
 
